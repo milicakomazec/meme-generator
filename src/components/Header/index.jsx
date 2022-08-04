@@ -8,8 +8,7 @@ const Header = () => {
         <img
           src="../../media/troll-face.png"
           alt="troll face"
-          height={35}
-          width={30}
+          className="logo-img"
         ></img>
         <div className="header--title">Meme Generator</div>
       </div>

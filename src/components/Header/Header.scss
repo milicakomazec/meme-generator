@@ -3,16 +3,19 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-image: linear-gradient(to left, #a626d3, #672280);
+  background-image: linear-gradient(to left, #a626d3 1.18%, #672280 100%);
   max-width: 550px;
   height: 65px;
-  padding: 0 20px;
+  padding: 0 25px 0 15px;
 }
 
 .header--logo {
   display: flex;
   align-items: center;
-  gap: 8px;
+}
+.logo-img {
+  height: 30px;
+  margin-right: 8px;
 }
 .header--title {
   font-family: "Karla";
