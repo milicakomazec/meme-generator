@@ -1,0 +1,33 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 0;
+  justify-content: center;
+}
+.form--container {
+  padding: 0 60px;
+}
+
+.form--input-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.form--input {
+  width: 200px;
+  height: 30px;
+  font-family: "Karla";
+  font-weight: 400;
+}
+
+.form--btn-get-meme {
+  width: 100%;
+  margin: 0 auto;
+  font-family: "Karla";
+  font-weight: 800;
+  height: 40px;
+  background: linear-gradient(90deg, #711f8d 1.14%, #a818da 100%);
+  border: none;
+  border-radius: 5px;
+  color: white;
+}
