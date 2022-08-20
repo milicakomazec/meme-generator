@@ -1,0 +1,37 @@
+.card--container {
+  display: flex;
+  justify-content: center;
+
+  .card-img--wrapper {
+    padding: 20px;
+    background-color: #339966;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: 4px 6px 38px -1px rgba(0, 0, 0, 0.64);
+  }
+}
+
+.card-text-container {
+  padding: 20px 20px 0 20px;
+  display: flex;
+  flex-direction: column;
+  font-family: "Karla";
+  gap: 14px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  transition: background-image 1s;
+  background-color: #ffcc99;
+  box-shadow: 4px 6px 38px -1px rgba(0, 0, 0, 0.64);
+}
+
+.card-text-title {
+  padding-top: 10px;
+  display: flex;
+  font-family: "Karla";
+  font-weight: 600;
+  gap: 10px;
+}
+
+.card-text-container:hover {
+  background-image: linear-gradient(to right, #78b3eb, #6ea2d4);
+}
