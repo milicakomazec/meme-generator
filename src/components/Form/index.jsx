@@ -5,14 +5,23 @@ import { useState } from "react";
 
 const Form = () => {
   const getRandomImg = () => {
-    const memesArray = memesData.data.memes;
+    const memesArray = allMemes.data.memes;
     const randomNumber = Math.floor(Math.random() * memesArray.length);
     // const url = memesArray[randomNumber].url;
     const { url } = memesArray[randomNumber];
-    setMemeImage(url);
+    setMeme((prevMeme) => ({
+      ...prevMeme,
+      randomImage: url,
+    }));
   };
 
-  const [memeImage, setMemeImage] = useState("");
+  const [allMemes, setAllMemes] = useState(memesData);
+
+  const [meme, setMeme] = useState({
+    topText: "",
+    bottomText: "",
+    randomImage: "https://i.imgflip.com/1ur9b0.jpg",
+  });
 
   return (
     <div className="form--container">
@@ -29,7 +38,12 @@ const Form = () => {
         ></input>
       </div>
       <div className="img--wrapper">
-        <img src={memeImage} width="400" height="300" alt="meme img"></img>
+        <img
+          src={meme.randomImage}
+          width="400"
+          height="300"
+          alt="meme img"
+        ></img>
       </div>
       <button className="form--btn-get-meme" onClick={getRandomImg}>
         Get a new meme image

@@ -22,7 +22,7 @@ const Card = () => {
   //     });
   //   };
 
-  //return an object, need to wrap it inside () , {()}
+  //return an object, need to wrap it inside () , {()} for implicite return
   const changeFavorite = () => {
     setContact((prevContact) => ({
       ...prevContact,
